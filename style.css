@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:hsl(240, 78%, 98%);
+    font-family:"Montserrat", sans-serif;
+    font-weight:700;
+    background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+    background-position:top right, bottom -2rem left;
+    background-repeat:no-repeat;
+}
+
+main {
+    margin-top:5rem;
+    margin-bottom:5rem;
+}
+
+h1 {
+    color:hsl(233, 13%, 49%);
+}
+
+.switch {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+h1, .slider {
+    margin-block:1.5rem;
+}
+
+.slider {
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    color:hsl(234, 14%, 74%);
+}
+
+.priceChanger {
+    background:linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width:3.5rem;
+    height:2rem;
+    border-radius:1rem;
+    display:flex;
+    align-items: center;
+    border:none;
+}
+
+.priceChanger:hover {
+    cursor:pointer;
+    background:linear-gradient(90deg, hsl(236, 100%, 92%), hsl(237, 100%, 86%));
+}
+
+.circle {
+    background-color:rgb(255, 255, 255);
+    width:1.5rem;
+    height:1.5rem;
+    border-radius:50%;
+    z-index:10;
+    margin:0 0.3rem;
+    position:relative;
+    left:1.4rem;
+}
+
+.circle.checked {
+    left:0rem;
+}
+
+.boxes {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    margin:2.5rem 0;
+}
+
+.header {
+    margin-top:3.5rem;
+}
+
+.text {
+    margin-block:1.5rem;
+}
+
+.box1, .box3 {
+    width:100%;
+    max-width:25rem;
+    background-color:white;
+    height:31rem;
+    border-radius:1rem;
+    align-self:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    border-radius:1rem;
+    color:hsl(233, 13%, 49%);
+}
+
+.leftPrice, .rightPrice {
+    color:hsl(232, 13%, 33%);
+}
+
+hr {
+    width:80%;
+    margin:auto;
+}
+
+.box1 > hr, .box3 > hr {
+    border:1px solid hsl(240, 100%, 95%)
+}
+
+.box1 {
+    border-radius:1rem 0 0 1rem;
+}
+
+.box2 {
+    width:100%;
+    max-width:25rem;
+    background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height:35rem;
+    border-radius:1rem;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3px);
+    color:white;
+}
+
+.box3 {
+    border-radius:0 1rem 1rem 0;
+}
+
+.middlePrice, .leftPrice, .rightPrice {
+    font-size:4rem;
+}
+
+button {
+    width:85%;
+    height:2.5rem;
+    font-family:"Montserrat", sans-serif;
+    border-radius:0.5rem;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:0.2rem;
+}
+
+.sideButton {
+    background:linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border:none;
+    color:white;
+    margin-top:1rem;
+}
+
+.sideButton:hover {
+    cursor:pointer;
+    background:none;
+    color:hsl(237, 63%, 64%);
+    border:1px solid hsl(237, 35%, 34%);
+}
+
+.middleButton {
+    background-color:white;
+    border:none;
+    color:hsl(237, 63%, 64%);
+    margin-top:3rem;
+}
+
+.middleButton:hover {
+    cursor:pointer;
+    background:none;
+    color:white;
+    border:1px solid white;
+}
+
+@media(max-width:720px) {
+    body {
+        background-image:url(bg-top.svg);
+        background-position:top right -14rem;
+    }
+
+    .boxes {
+        flex-direction:column;
+        align-items:center;
+    }
+    .box1, .box2, .box3 {
+        border-radius:1rem;
+        margin-block:1.2rem;
+    }
+}
