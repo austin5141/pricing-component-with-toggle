@@ -4,14 +4,14 @@ rightPrice = document.querySelector(".rightPrice")
 btn = document.querySelector(".priceChanger")
 circle = document.querySelector(".circle")
 
-monthlyBasic = "19.99"
-yearlyBasic = "199.99"
+monthlyBasic = "$19.99"
+yearlyBasic = "$199.99"
 
-monthlyPro = "24.99"
-yearlyPro = "249.99"
+monthlyPro = "$24.99"
+yearlyPro = "$249.99"
 
-monthlyMaster = "39.99"
-yearlyMaster = "399.99"
+monthlyMaster = "$39.99"
+yearlyMaster = "$399.99"
 
 let monthly = true
 
