@@ -16,7 +16,7 @@ yearlyMaster = "399.99"
 let monthly = true
 
 btn.addEventListener("click", (e) => {
-
+    circle.classList.toggle("checked")
     if (monthly == true) {
         leftPrice.textContent = yearlyBasic
         midPrice.textContent = yearlyPro
